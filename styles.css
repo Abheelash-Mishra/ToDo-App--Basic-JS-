@@ -16,14 +16,14 @@ body {
 }
 
 .main__container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
     background-color: #f8f8f8;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
+}
   
 h1 {
     font-size: 40px;
@@ -89,5 +89,59 @@ li span {
   
 .fa-trash:hover {
     color: #ff1744;
+}
+
+@media (max-width: 600px) {
+    body {
+        justify-content: initial;
+        align-items: initial;
+    }
+
+    .main__container {
+        width: 70%;
+        padding: 10px;
+        margin: 80px auto;
+    }
+  
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  
+    input {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  
+    button {
+      padding: 8px 12px;
+    }
+  
+    li {
+      margin-bottom: 8px;
+      padding: 8px;
+    }
+  
+    li span {
+      margin-right: 8px;
+    }
+  
+    .fa-trash {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    * {
+        font-size: 14px
+    }
+
+    .input_form {
+        flex-direction: column;
+    }
+
+    input {
+        width: 85%;
+    }
 }
   
